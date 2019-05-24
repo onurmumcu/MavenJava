@@ -1,0 +1,29 @@
+pipeline
+{
+agent any
+
+stages
+{
+
+stage('ilk deneme')
+{
+steps{	
+bat "mvn compile"
+}
+
+}
+
+stage('Yeni')
+{
+
+step{
+echo "Yeni stage bolumu"
+}	
+}
+
+
+
+
+
+}
+}
